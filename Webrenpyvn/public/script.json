@@ -1,0 +1,290 @@
+{
+  "script": [
+    {
+      "scene_name": "Chapter 1: Introduction to Computational Humor",
+      "scene_music": "ChillLofiR.mp3",
+      "interactions": [
+        {
+          "character_name": "Kurisu",
+          "dialogue": "अरे! आज, हम कुछ आकर्षक में गोता लगा रहे हैंः कम्प्यूटेशनल हास्य! क्या कंप्यूटर वास्तव में मजाक कर सकते हैं?",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "यह पेपर इस बात की पड़ताल करता है कि कंप्यूटर कितनी अच्छी तरह से हास्य उत्पन्न कर सकते हैं और * व्याख्या * कर सकते हैं। यह उतना आसान नहीं है जितना आप सोच सकते हैं। हास्य अमूर्त, रचनात्मक है और संदर्भ पर बहुत निर्भर करता है।",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Player",
+          "dialogue": {
+            "type": "conversational",
+            "prompt": "ए. आई. के लिए हास्य को समझना क्यों महत्वपूर्ण है?",
+            "choices": [
+              {
+                "text": "यह उन्हें मानव संचार को बेहतर ढंग से समझने में मदद करता है।",
+                "outcome": "next"
+              },
+              {
+                "text": "यह प्रोग्रामरों के लिए सिर्फ एक मजेदार चुनौती है।",
+                "outcome": "next"
+              },
+              {
+                "text": "कंप्यूटर चुटकुलों को समझते हैं? हम कैसी दुनिया में रहते हैं",
+                "outcome": "next"
+              }
+            ]
+          },
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        }
+      ]
+    },
+    {
+      "scene_name": "Chapter 2: The Building Blocks: Theories of Humor",
+      "scene_music": "ChillLofiR.mp3",
+      "interactions": [
+        {
+          "character_name": "Kurisu",
+          "dialogue": "इससे पहले कि हम बहुत दूर जाएँ, आइए कुछ सिद्धांतों पर नज़र डालते हैं कि क्या * कुछ मज़ेदार बनाता है। राहत सिद्धांत, श्रेष्ठता सिद्धांत .......... है लेकिन AI के लिए सबसे बड़ा विसंगति सिद्धांत है।",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "असंगति का अर्थ है कि कुछ अप्रत्याशित या जगह से बाहर है। एक मजाक की पंचलाइन अक्सर एक विसंगति पैदा करती है जो हमें हंसा देती है!",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Player",
+          "dialogue": {
+            "type": "re-explanation",
+            "prompt": "तो, हास्य उन चीजों के बारे में है जो समझ में नहीं आती हैं? क्या आप उदाहरण दे सकते हैं?",
+            "choices": [
+              {
+                "text": "हां, कृपया एक उदाहरण दें",
+                "outcome": "replay"
+              },
+              {
+                "text": "नहीं, मुझे लगता है कि मैं समझ गया।",
+                "outcome": "next"
+              }
+            ]
+          },
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "ज़रूर! वैज्ञानिक परमाणुओं पर भरोसा क्यों नहीं करते? क्योंकि वे सब कुछ बनाते हैं! असंगति यह है कि 'मेकअप' का अर्थ 'आविष्कार' या 'रचना' हो सकता है",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        }
+      ]
+    },
+    {
+      "scene_name": "Chapter 3: Generating Puns: A Playground for AI",
+      "scene_music": "ChillLofiR.mp3",
+      "interactions": [
+        {
+          "character_name": "Kurisu",
+          "dialogue": "ठीक है, आइए बात करते हैं कि कंप्यूटर कैसे * चुटकुले बनाते हैं। एक बड़ा ध्यान श्लेष पर रहा है, क्योंकि वे अपेक्षाकृत सीधे हैं।",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "दो मुख्य प्रकार हैंः होमोग्राफिक श्लेष, जो कई अर्थों वाले शब्दों का उपयोग करते हैं, और हेटेरोग्राफिक श्लेष, जो समान ध्वनियों पर निर्भर करते हैं।",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Player",
+          "dialogue": {
+            "type": "question",
+            "prompt": "होमोग्राफिक और हेटेरोग्राफिक श्लेष में क्या अंतर है?",
+            "choices": [
+              {
+                "text": "होमोग्राफिक श्लेष समान अर्थों का उपयोग करते हैं, हेटेरोग्राफिक समान ध्वनियों का उपयोग करते हैं।",
+                "outcome": "wrong"
+              },
+              {
+                "text": "होमोग्राफिक श्लेष कई अर्थों का उपयोग करते हैं, विषमलैंगिक समान ध्वनियों का उपयोग करते हैं।",
+                "outcome": "correct"
+              },
+              {
+                "text": "हेटेरोग्राफिक श्लेष कई अर्थों का उपयोग करते हैं, होमोग्राफिक समान ध्वनियों का उपयोग करते हैं।",
+                "outcome": "wrong"
+              }
+            ]
+          },
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "बिल्कुल! उदाहरण के लिए, एक होमोग्राफिक श्लेषः 'समय एक तीर की तरह उड़ता है। फल केले की तरह उड़ते हैं। 'मक्खी' के दो अर्थ हैं। एक विषमलैंगिक श्लेष? कम आम है क्योंकि यह कठिन है।",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        }
+      ]
+    },
+    {
+      "scene_name": "Chapter 4: Explaining the Joke: The Real Challenge",
+      "scene_music": "ChillLofiR.mp3",
+      "interactions": [
+        {
+          "character_name": "Kurisu",
+          "dialogue": "हास्य उत्पन्न करना एक बात है, लेकिन * यह समझाना * कि कुछ मज़ेदार क्यों है? यही वह जगह है जहाँ चीजें दिलचस्प हो जाती हैं! एक प्रसिद्ध उद्धरण कहता है कि यदि एक कंप्यूटर एक मजाक की व्याख्या कर सकता है, तो वह वास्तव में समझता है।",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "पेपर दो दृष्टिकोणों को देखता हैः हास्य के प्रकार को वर्गीकृत करना और एक प्राकृतिक भाषा स्पष्टीकरण प्रदान करना।",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Player",
+          "dialogue": {
+            "type": "conversational",
+            "prompt": "आपको क्या लगता है कि कौन सा तरीका अधिक मूल्यवान है?",
+            "choices": [
+              {
+                "text": "वर्गीकरण",
+                "outcome": "next"
+              },
+              {
+                "text": "प्राकृतिक भाषा स्पष्टीकरण",
+                "outcome": "next"
+              },
+              {
+                "text": "दोनों",
+                "outcome": "next"
+              }
+            ]
+          },
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "पेपर में कहा गया है कि जबकि वर्गीकरण का अपना स्थान है, प्राकृतिक भाषा स्पष्टीकरण गहरी अंतर्दृष्टि प्रदान करते हैं, विशेष रूप से जटिल चुटकुलों के लिए।",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        }
+      ]
+    },
+    {
+      "scene_name": "Chapter 5: The Future of Computational Humor",
+      "scene_music": "ChillLofiR.mp3",
+      "interactions": [
+        {
+          "character_name": "Kurisu",
+          "dialogue": "तो, यह सब कहाँ जा रहा है? शोध-पत्र भविष्य के शोध के लिए कुछ रोमांचक दिशाओं की ओर इशारा करता है। पहला जनसांख्यिकीय-जागरूक हास्य है, जो विशिष्ट दर्शकों के अनुरूप चुटकुले हैं।",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "इसके अलावा, मजाक बनाने के पीछे किसी के इरादे को जानने की क्षमता महत्वपूर्ण है। यह 'मैं सिर्फ मजाक कर रहा था' के बहाने से बचने में मदद कर सकता है जब घृणित भाषण कहा गया है।",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Player",
+          "dialogue": {
+            "type": "re-explanation",
+            "prompt": "इंटेंट-अवेयर ह्यूमर यह महत्वपूर्ण क्यों है?",
+            "choices": [
+              {
+                "text": "कृपया इसे फिर से समझाइए।",
+                "outcome": "replay"
+              },
+              {
+                "text": "मुझे लगता है कि मैं समझता हूं।",
+                "outcome": "next"
+              }
+            ]
+          },
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "खैर, इरादा यह निर्धारित करने में मदद कर सकता है कि क्या संदर्भ स्वीकार्य है, या क्या इसका उपयोग नफरत फैलाने के लिए किया जा रहा है। 'यह सिर्फ एक मजाक है' बचाव एक हानिकारक विचार रहा है, और एआई इससे आगे देखने में मदद करने में सक्षम हो सकता है।",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Player",
+          "dialogue": {
+            "type": "question",
+            "prompt": "पेपर में उल्लिखित कम्प्यूटेशनल हास्य का एक नैतिक विचार क्या है?",
+            "choices": [
+              {
+                "text": "ऐसे चुटकुले बनाना जो बहुत अधिक बौद्धिक हों।",
+                "outcome": "wrong"
+              },
+              {
+                "text": "अनजाने में हानिकारक पूर्वाग्रहों या रूढ़ियों को फैलाना।",
+                "outcome": "correct"
+              },
+              {
+                "text": "बहुत अधिक कम्प्यूटिंग शक्ति का उपयोग करना।",
+                "outcome": "wrong"
+              }
+            ]
+          },
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        }
+      ]
+    },
+    {
+      "scene_name": "Chapter 6: Conclusion",
+      "scene_music": "ChillLofiR.mp3",
+      "interactions": [
+        {
+          "character_name": "Kurisu",
+          "dialogue": "तो, वहाँ आपके पास है! कम्प्यूटेशनल हास्य वास्तविक दुनिया के अनुप्रयोगों के साथ एक अनसुलझा कार्य है। यह केवल कंप्यूटर को मज़ेदार बनाने के बारे में नहीं है; यह भाषा, संदर्भ और यहां तक कि नैतिकता को समझने के बारे में है।",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "भविष्य के काम में हास्य की एक व्यापक श्रृंखला पर विचार करने और इसमें शामिल नैतिकता पर स्पष्ट ध्यान देने की आवश्यकता है। यह बहुत संभावनाओं के साथ एक आकर्षक क्षेत्र है!",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Player",
+          "dialogue": {
+            "type": "conversational",
+            "prompt": "आपने जो सीखा वह आपकी पसंदीदा चीज थी?",
+            "choices": [
+              {
+                "text": "कि ए. आई. यह देखने में सक्षम हो सकता है कि नफरत फैलाने के लिए कब चुटकुलों का उपयोग किया जाता है।",
+                "outcome": "next"
+              },
+              {
+                "text": "पेंट्स के बीच का अंतर!",
+                "outcome": "next"
+              },
+              {
+                "text": "हास्य कैसे काम करता है, इसके बारे में अधिक जानकारी।",
+                "outcome": "next"
+              }
+            ]
+          },
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        }
+      ]
+    }
+  ],
+  "language": "hi"
+}

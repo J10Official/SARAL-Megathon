@@ -1,0 +1,301 @@
+{
+  "script": [
+    {
+      "scene_name": "Chapter 1: Introduction to Computational Humour",
+      "scene_music": "ChillLofiR.mp3",
+      "interactions": [
+        {
+          "character_name": "Kurisu",
+          "dialogue": "హేయ్! ఈ రోజు, మనం నిజంగా సరదాగా ఏదో లో మునిగిపోతున్నాముః గణన హాస్యం! ఇదంతా కంప్యూటర్లను అర్థం చేసుకోవడం మరియు జోకులు సృష్టించడం గురించి.",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "హాస్యం ఎంత సంక్లిష్టంగా ఉంటుందో ఆలోచించండి. ఇది కేవలం పదాలను తెలుసుకోవడం గురించి కాదు, ఇది సందర్భం, సంస్కృతి మరియు చెప్పని చిక్కులను కూడా అర్థం చేసుకోవడం గురించి. అందుకే ఇది ఏఐకి అంత సవాలుగా ఉంది!",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Player",
+          "dialogue": {
+            "type": "conversational",
+            "prompt": "కంప్యూటర్లను సరదాగా చేసే ప్రయత్నంలో కూడా మనం ఎందుకు ఇబ్బంది పడాలి?",
+            "choices": [
+              {
+                "text": "ఎందుకంటే ఇది చాలా సరదాగా ఉంటుంది!",
+                "outcome": "next"
+              },
+              {
+                "text": "భాషపై ఏఐ అవగాహనను మెరుగుపరచడం.",
+                "outcome": "next"
+              },
+              {
+                "text": "ఎందుకంటే రోబోట్లు జోకులు చెప్పడం సరదాగా ఉంటుంది.",
+                "outcome": "next"
+              }
+            ]
+          },
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "సరిగ్గా! ఇది AI ఏమి చేయగలదో సరిహద్దులను నెట్టివేస్తుంది. హాస్య అవగాహన అనేది ఎన్ఎల్పి యొక్క కీలకమైన ఉప డొమైన్ అని ఈ వ్యాసం వాదిస్తుంది.",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        }
+      ]
+    },
+    {
+      "scene_name": "Chapter 2: Theories of Humour",
+      "scene_music": "ChillLofiR.mp3",
+      "interactions": [
+        {
+          "character_name": "Kurisu",
+          "dialogue": "కాబట్టి, ఏది సరదాగా చేస్తుంది? తత్వవేత్తలు మరియు శాస్త్రవేత్తలు యుగాలుగా దీని గురించి ఆలోచిస్తున్నారు! మనం కవర్ చేయవలసిన కొన్ని ప్రధాన సిద్ధాంతాలు ఉన్నాయి.",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "మొదట, 'రిలీఫ్ థియరీ' ఉంది-హాస్యం మానసిక శక్తిని విడుదల చేస్తుందనే ఆలోచన. అప్పుడు, 'శ్రేష్ఠత సిద్ధాంతం' ఉంది, ఇది మన గురించి మంచి అనుభూతి చెందడానికి ఇతరులను చూసి నవ్వాలని సూచిస్తుంది.",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "కానీ AIకి అత్యంత సంబంధితమైన రెండు 'అసంబద్ధత సిద్ధాంతం' మరియు 'నిరపాయమైన ఉల్లంఘన సిద్ధాంతం'. అసమానత అంటే మన అంచనాలతో ఊహించని ఘర్షణలు.",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "నిరపాయమైన ఉల్లంఘన సిద్ధాంతం దానిని ఒక అడుగు ముందుకు తీసుకువెళుతుందిః అసమానత అనేది ఒక ప్రమాణాన్ని * కొద్దిగా * బెదిరించడం లేదా ఉల్లంఘించడం అయి ఉండాలి, కానీ ప్రమాదకరం కూడా కాదు.",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Player",
+          "dialogue": {
+            "type": "question",
+            "prompt": "ఊహించని విషయాలు నుండి హాస్యం వస్తుందని ఏ సిద్ధాంతం చెబుతుంది?",
+            "choices": [
+              {
+                "text": "అసమానత సిద్ధాంతం",
+                "outcome": "correct"
+              },
+              {
+                "text": "శ్రేష్ఠత సిద్ధాంతం",
+                "outcome": "wrong"
+              },
+              {
+                "text": "ఉపశమన సిద్ధాంతం",
+                "outcome": "wrong"
+              }
+            ]
+          },
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        }
+      ]
+    },
+    {
+      "scene_name": "Chapter 3: Pun Generation - A Starting Point",
+      "scene_music": "ChillLofiR.mp3",
+      "interactions": [
+        {
+          "character_name": "Kurisu",
+          "dialogue": "సరే, ఆచరణలోకి వద్దాం! AI కొంత పురోగతి సాధించిన ఒక రంగం పన్లను ఉత్పత్తి చేయడంలో ఉంది. అవి సరళమైనవి ఎందుకంటే అవి తరచుగా పదజాలంపై ఆధారపడతాయి మరియు సంక్లిష్టమైన అవగాహనపై తక్కువ ఆధారపడతాయి.",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "రెండు ప్రధాన రకాలు ఉన్నాయిః హోమోగ్రాఫిక్ పదాలు, ఇవి బహుళ అర్థాలతో పదాలను ఉపయోగిస్తాయి మరియు భిన్నమైన పదాలు, ఇవి ఒకేలా ధ్వనించే పదాలను ఉపయోగిస్తాయి కానీ వేర్వేరుగా వ్రాయబడతాయి.",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Player",
+          "dialogue": {
+            "type": "re-explanation",
+            "prompt": "ఆగండి, మీరు నాకు ఒక్కొక్క ఉదాహరణ ఇవ్వగలరా?",
+            "choices": [
+              {
+                "text": "అవును, ప్లీజ్!",
+                "outcome": "replay"
+              },
+              {
+                "text": "నేను అర్థం చేసుకున్నానని అనుకుంటున్నాను, ముందుకు వెళ్దాం.",
+                "outcome": "next"
+              }
+            ]
+          },
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "ఖచ్చితంగా! ఒక హోమోగ్రాఫిక్ పద్యంః 'సమయం బాణంలా ఎగురుతుంది. పండ్లు అరటిపళ్ళలా ఎగురుతాయి. 'ఫ్లైస్' అనే పదానికి రెండు అర్థాలు ఉన్నాయి. ఒక భిన్నమైన పద్యంః 'నేను అరుస్తున్నాను, మీరు అరుస్తున్నారు, మనమందరం ఐస్ క్రీం కోసం అరుస్తాము!' అవి ఒకే విధమైన, భిన్నమైన స్పెల్లింగ్ అనిపిస్తాయి.",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "సమస్య ఏమిటంటే, పెద్ద భాషా నమూనాలు గొప్ప హోమోగ్రాఫిక్ పద్యాలను సృష్టించగలవు, కానీ భిన్న భాషా పద్యాలతో కష్టపడతాయి. వారు 'సోమరితనం పం జనరేషన్' వైపు కూడా మొగ్గు చూపుతారు, ఇక్కడ పం సందర్భానికి సరిపోదు.",
+          "character_expression": "sad",
+          "image_displayed": "image.png"
+        }
+      ]
+    },
+    {
+      "scene_name": "Chapter 4: Beyond Puns - The Real Challenge",
+      "scene_music": "ChillLofiR.mp3",
+      "interactions": [
+        {
+          "character_name": "Kurisu",
+          "dialogue": "సరే, పద్యాలు ఒక ప్రారంభం, కానీ నిజమైన హాస్యంలో చాలా ఎక్కువ ఉంటుంది! సాంస్కృతిక జ్ఞానం, ప్రస్తుత సంఘటనల అవగాహన మరియు సంక్లిష్ట అసమానతలు సృష్టించే సామర్థ్యం.",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "వ్యంగ్యం, వ్యంగ్యం మరియు పరిశీలనాత్మక హాస్యం గురించి ఆలోచించండి. వీటికి మానవ ప్రవర్తన మరియు సామాజిక నిబంధనల సూక్ష్మ నైపుణ్యాలను గ్రహించడానికి AI అవసరం. ఇక్కడే విషయాలు గందరగోళంగా మారతాయి!",
+          "character_expression": "angry",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Player",
+          "dialogue": {
+            "type": "conversational",
+            "prompt": "కాబట్టి, ఈ మరింత సంక్లిష్టమైన హాస్య రూపాలను రూపొందించడానికి కొన్ని విధానాలు ఏమిటి?",
+            "choices": [
+              {
+                "text": "వ్యంగ్య శీర్షిక తరం గురించి చెప్పండి.",
+                "outcome": "next"
+              },
+              {
+                "text": "AI హైపర్బోల్ను ఎలా ఉపయోగించగలదో వివరించండి.",
+                "outcome": "next"
+              },
+              {
+                "text": "నాలుక చిట్లింపులను సృష్టించడం గురించి ఏమిటి?",
+                "outcome": "next"
+              }
+            ]
+          },
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "సరే, కొన్ని విధానాలు ఇప్పటికే ఉన్న జోకుల నుండి టెంప్లేట్లను వెలికితీసి, ఆపై ఖాళీలను పూరించడానికి AI ని ఉపయోగిస్తాయి. మరికొందరు వాస్తవ ప్రపంచ జ్ఞానాన్ని వ్యంగ్య మూలాలతో అనుసంధానించడానికి ప్రయత్నిస్తారు.",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        }
+      ]
+    },
+    {
+      "scene_name": "Chapter 5: Humour Explanation - Cracking the Code",
+      "scene_music": "ChillLofiR.mp3",
+      "interactions": [
+        {
+          "character_name": "Kurisu",
+          "dialogue": "హాస్యం సృష్టించడం కంటే మరింత ఆసక్తికరమైనది దానిని వివరించడం! ఏదైనా తమాషా ఎందుకు అని AI మనకు చెప్పగలిగితే, అది చాలా లోతైన అవగాహనను ప్రదర్శిస్తుంది.",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "వర్గీకరణ ద్వారా ఒక విధానం ఉందిః ఏదో ఫన్నీగా చేసే భాషా లక్షణాలను గుర్తించడం. కానీ అది ఉపరితలంపై గీతలు మాత్రమే వేస్తుంది.",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "సహజ భాషా వివరణలు చాలా ప్రయోజనకరంగా ఉంటాయి. ఒక నిర్దిష్ట జోక్ సాధారణ ఆంగ్లంలో ఫన్నీగా ఎందుకు ఉందో వివరించే AI ని ఊహించుకోండి! అదే లక్ష్యం.",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Player",
+          "dialogue": {
+            "type": "question",
+            "prompt": "సహజ భాషా వివరణ యొక్క ప్రధాన ప్రయోజనం ఏమిటి?",
+            "choices": [
+              {
+                "text": "ఇది ముందుగా నిర్వచించిన లేబుల్లపై ఆధారపడటం కంటే అనుకూలమైన వివరణలను అందిస్తుంది.",
+                "outcome": "correct"
+              },
+              {
+                "text": "దీనిని సులభంగా ఆటోమేటెడ్ చేయవచ్చు.",
+                "outcome": "wrong"
+              },
+              {
+                "text": "ఇది వర్గీకరణ కంటే సంక్షిప్తమైనది.",
+                "outcome": "wrong"
+              }
+            ]
+          },
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        }
+      ]
+    },
+    {
+      "scene_name": "Chapter 6: The Ethics and Future of AI Humour",
+      "scene_music": "ChillLofiR.mp3",
+      "interactions": [
+        {
+          "character_name": "Kurisu",
+          "dialogue": "ఇప్పుడు, తీవ్రమైన వైపు గురించి మాట్లాడుకుందాం. హాస్యం ఆత్మాశ్రయమైనది మరియు అభ్యంతరకరమైనది కూడా కావచ్చు. AI దానిని ఎలా ఉత్పత్తి చేస్తుంది మరియు అర్థం చేసుకుంటుంది అనే దాని గురించి మనం జాగ్రత్తగా ఉండాలి.",
+          "character_expression": "sad",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "భవిష్యత్ పరిశోధన జనాభా-అవగాహన గల హాస్యంపై దృష్టి పెట్టాలి, నిర్దిష్ట ప్రేక్షకులకు జోకులను టైలరింగ్ చేయాలి. మరియు మనకు హ్యూమన్-ఇన్-ది-లూప్ విధానాలు అవసరం, ఇక్కడ AI మానవులకు హాస్యం సృష్టించడంలో సహాయపడుతుంది, వాటిని భర్తీ చేయకుండా.",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "అంతిమంగా, గణన హాస్యం భాష మరియు తెలివితేటలను అర్థం చేసుకోవడానికి ఒక శక్తివంతమైన సాధనం. కానీ ఏదైనా సాధనం వలె, దీనిని బాధ్యతాయుతంగా ఉపయోగించాల్సిన అవసరం ఉంది.",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Player",
+          "dialogue": {
+            "type": "conversational",
+            "prompt": "ఏ నైతిక ఆందోళన అత్యంత ముఖ్యమైనది?",
+            "choices": [
+              {
+                "text": "ప్రమాదకర హాస్యం యొక్క తరం.",
+                "outcome": "next"
+              },
+              {
+                "text": "మానవ హాస్యనటుల సంభావ్య స్థానభ్రంశం.",
+                "outcome": "next"
+              },
+              {
+                "text": "సాంస్కృతిక సూక్ష్మ నైపుణ్యాలను తప్పుగా అర్థం చేసుకోవడం.",
+                "outcome": "next"
+              }
+            ]
+          },
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "ఈ మూడూ సరైనవే! ప్రపంచం గురించి మన అవగాహనను అనుసంధానించే మరియు పెంచే హాస్యాన్ని తయారు చేయడమే లక్ష్యం, విభజించడం లేదా కించపరచడం కాదు.",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        }
+      ]
+    }
+  ],
+  "language": "te"
+}

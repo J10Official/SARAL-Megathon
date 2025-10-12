@@ -1,0 +1,71 @@
+
+{
+  "script": [
+    {
+      "scene_name": "Lab Ruminations",
+      "scene_music": "ChillLofiR.mp3",
+      "interactions": [
+        {
+          "character_name": "Kurisu",
+          "dialogue": "You know, sometimes I wonder if all this theoretical physics... if it truly makes a difference in the grand scheme of things.",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Player",
+          "dialogue": "I suppose it's one way to define existence, isn't it? To understand the 'why'.",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "Perhaps. But the 'why' can be a heavy burden. Especially when the answers only lead to more questions, more... responsibilities.",
+          "character_expression": "sad",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Player",
+          "dialogue": [
+            "Are you feeling overwhelmed, Kurisu?",
+            "Don't worry, we'll figure it out together."
+          ],
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        }
+      ]
+    },
+    {
+      "scene_name": "Late Night Discussion",
+      "scene_music": "ChillLofiR.mp3",
+      "interactions": [
+        {
+          "character_name": "Kurisu",
+          "dialogue": "I appreciate your concern. It's just... the implications of some of our work. It makes you question everything.",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Player",
+          "dialogue": "That's why we have to be careful. To ensure whatever we uncover is used for good, not ill.",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "True. It's a heavy mantle to bear, the pursuit of knowledge. But... perhaps it's a worthwhile one after all.",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Player",
+          "dialogue": [
+            "Absolutely. Think of the possibilities!",
+            "As long as we don't accidentally shatter spacetime again."
+          ],
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        }
+      ]
+    }
+  ]
+}

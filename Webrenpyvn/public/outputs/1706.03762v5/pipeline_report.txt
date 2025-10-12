@@ -1,0 +1,24 @@
+PDF to VN Pipeline Report
+========================
+
+Source PDF: /home/jatin/Code/Year3/Export/research_paper/1706.03762v5.pdf
+Paper Name: 1706.03762v5
+Generated: 2025-10-12 09:39:23
+
+Generated Files:
+---------------
+
+EN Language:
+  Script: 1706.03762v5_vn_script.json
+  Audio Files: 103 WAV files
+  Audio Size: 208.0 MB
+
+HI Language:
+  Script: 1706.03762v5_vn_script_hi.json
+  Audio Files: 100 WAV files
+  Audio Size: 218.5 MB
+
+TE Language:
+  Script: 1706.03762v5_vn_script_te.json
+  Audio Files: 102 WAV files
+  Audio Size: 267.5 MB

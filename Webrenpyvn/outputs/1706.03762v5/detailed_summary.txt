@@ -1,0 +1,93 @@
+--- DETAILED ACADEMIC SUMMARY ---
+Title: 1706.03762V5
+Authors: Authors
+Date: 2024
+----------------------------------------
+
+# Summary of "Attention Is All You Need"
+
+**Abstract**
+This paper introduces the Transformer, a novel neural network architecture for sequence transduction tasks. Unlike existing models that rely on recurrent or convolutional neural networks, the Transformer is based entirely on attention mechanisms, eliminating recurrence and convolutions. The Transformer exhibits superior translation quality, enhanced parallelization, and reduced training time compared to existing models. It achieves state-of-the-art results on both the WMT 2014 English-to-German and English-to-French translation tasks, while also demonstrating strong generalization capabilities on English constituency parsing.
+
+**1. Introduction**
+Recurrent Neural Networks (RNNs), particularly LSTMs and gated recurrent networks, have been the dominant approach for sequence modeling and transduction tasks like language modeling and machine translation. However, their inherent sequential nature limits parallelization during training, especially with long sequences. While attention mechanisms have improved sequence modeling by allowing the modeling of dependencies regardless of distance, they are typically used in conjunction with RNNs. This paper proposes the Transformer, a novel architecture that abandons recurrence altogether and relies solely on attention mechanisms to capture global dependencies between input and output sequences, thus enabling significant parallelization and achieving state-of-the-art translation quality with less training time.
+
+**2. Background**
+Several prior efforts have focused on reducing sequential computation using convolutional neural networks (CNNs) like the Extended Neural GPU, ByteNet, and ConvS2S. These models compute hidden representations in parallel, but the number of operations needed to relate distant positions increases with the distance between them, making it harder to learn long-range dependencies. The Transformer reduces this to a constant number of operations. Self-attention, relating different positions within a single sequence, has been used in various tasks. However, the Transformer is the first transduction model to rely entirely on self-attention for input and output representations without using RNNs or convolutions.
+
+**3. Model Architecture**
+The Transformer adopts the encoder-decoder structure common in sequence transduction models. The encoder maps an input sequence (x1, ..., xn) to a sequence of continuous representations z = (z1, ..., zn), and the decoder generates an output sequence (y1, ..., ym) one element at a time in an auto-regressive manner.
+
+### 3.1 Encoder and Decoder Stacks
+*   **Encoder:** The encoder consists of N=6 identical layers, each with two sub-layers: a multi-head self-attention mechanism and a position-wise fully connected feed-forward network. Residual connections and layer normalization are applied around each sub-layer.
+*   **Decoder:** The decoder also has N=6 identical layers. In addition to the sub-layers in the encoder, it includes a third sub-layer performing multi-head attention over the encoder output. The self-attention sub-layer is modified to prevent attending to subsequent positions, ensuring predictions at position *i* depend only on known outputs before *i*.
+
+### 3.2 Attention
+An attention function maps a query and a set of key-value pairs to an output, where the output is a weighted sum of the values, weighted by the compatibility of the query with the corresponding key.
+
+#### 3.2.1 Scaled Dot-Product Attention
+The paper introduces "Scaled Dot-Product Attention." The dot products of the query with all keys are computed, divided by the square root of the dimension of the keys (√dk), and a softmax function is applied to obtain the weights. This scaling is introduced to counteract the effect of large dot product magnitudes for large values of dk. The attention is computed as: Attention(Q, K, V) = softmax(QKT/√dk)V
+
+#### 3.2.2 Multi-Head Attention
+Instead of a single attention function, multi-head attention linearly projects the queries, keys, and values *h* times with different learned linear projections to lower dimensions. The attention function is then applied in parallel to each of these projected versions. The results are concatenated and projected again to produce the final values. This allows the model to attend to information from different representation subspaces at different positions.
+
+MultiHead(Q, K, V) = Concat(head1, ..., headh)WO
+
+where headi = Attention(QWQ i, KWK i, VWV i)
+
+The paper uses h=8 parallel attention layers, with dk=dv=dmodel/h=64.
+
+#### 3.2.3 Applications of Attention in our Model
+The Transformer utilizes multi-head attention in three ways:
+
+*   **Encoder-Decoder Attention:** Queries come from the previous decoder layer, while keys and values come from the encoder output. This allows each decoder position to attend to all input positions.
+*   **Encoder Self-Attention:** Keys, values, and queries all originate from the same place: the output of the previous encoder layer. Each encoder position can attend to all positions in the previous encoder layer.
+*   **Decoder Self-Attention:** Similar to the encoder, but with masking to prevent positions from attending to subsequent positions, preserving the auto-regressive property.
+
+### 3.3 Position-wise Feed-Forward Networks
+Each layer contains a fully connected feed-forward network applied to each position separately. It consists of two linear transformations with a ReLU activation in between.
+
+FFN(x) = max(0, xW1 + b1)W2 + b2
+
+The linear transformations are the same across positions but have different parameters for each layer.
+
+### 3.4 Embeddings and Softmax
+Learned embeddings convert input and output tokens to vectors of dimension dmodel. A learned linear transformation and softmax function convert the decoder output to predicted next-token probabilities. The weight matrix is shared between the two embedding layers and the pre-softmax linear transformation, and the embedding weights are multiplied by √dmodel.
+
+### 3.5 Positional Encoding
+Since the model contains no recurrence or convolution, positional encodings are added to the input embeddings to provide information about the position of tokens in the sequence. Sine and cosine functions of different frequencies are used:
+
+PE(pos, 2i) = sin(pos/100002i/dmodel)
+
+PE(pos, 2i+1) = cos(pos/100002i/dmodel)
+
+**4. Why Self-Attention**
+Self-attention layers are compared to recurrent and convolutional layers, considering computational complexity, parallelization, and path length between long-range dependencies. Self-attention connects all positions with a constant number of operations, while recurrent layers require O(n) sequential operations. Self-attention is faster than recurrent layers when the sequence length *n* is smaller than the representation dimensionality *d*. Learning long-range dependencies is easier with shorter paths between input and output positions. Self-attention also yields more interpretable models.
+
+**5. Training**
+
+### 5.1 Training Data and Batching
+The models were trained on the WMT 2014 English-German (4.5 million sentence pairs) and English-French (36 million sentences) datasets. Byte-pair encoding and word-piece vocabulary were used for tokenization. Sentence pairs were batched by approximate sequence length.
+
+### 5.2 Hardware and Schedule
+Training was performed on one machine with 8 NVIDIA P100 GPUs. The base models trained for 100,000 steps (12 hours), and the big models trained for 300,000 steps (3.5 days).
+
+### 5.3 Optimizer
+The Adam optimizer was used with specific beta values and epsilon. The learning rate was varied during training using a specific formula, increasing linearly for the first *warmup_steps* and decreasing proportionally to the inverse square root of the step number afterwards.
+
+### 5.4 Regularization
+Three types of regularization were used: residual dropout, applied to the output of each sub-layer; dropout applied to the sums of embeddings and positional encodings; and label smoothing.
+
+**6. Results**
+
+### 6.1 Machine Translation
+On the WMT 2014 English-to-German translation task, the "Transformer (big)" model achieved a new state-of-the-art BLEU score of 28.4, surpassing previous models (including ensembles) by over 2.0 BLEU. The "Transformer (base model)" also exceeded previous models at a fraction of the training cost. On the WMT 2014 English-to-French task, the "Transformer (big)" model attained a BLEU score of 41.8, outperforming previous single models with significantly lower training cost.
+
+### 6.2 Model Variations
+The importance of different components was evaluated by varying the base model and measuring performance on English-to-German translation. Variations included the number of attention heads, attention key/value dimensions, model size, dropout rate, and positional encodings. Single-head attention performed worse than multi-head attention, and reducing the attention key size also hurt model quality. Bigger models and dropout were beneficial. Learned positional embeddings yielded similar results to sinusoidal encodings.
+
+### 6.3 English Constituency Parsing
+The Transformer was applied to English constituency parsing to evaluate its generalization ability. The model was trained on the Wall Street Journal (WSJ) portion of the Penn Treebank and in a semi-supervised setting using larger corpora. The results showed that the Transformer performed surprisingly well, surpassing previous models (excluding the Recurrent Neural Network Grammar) despite the lack of task-specific tuning.
+
+**7. Conclusion**
+The paper presents the Transformer, a novel sequence transduction model based entirely on attention, replacing recurrent layers with multi-headed self-attention. The Transformer trains faster and achieves new state-of-the-art results on translation tasks. The authors plan to extend the model to other tasks, input/output modalities, and investigate local attention mechanisms for handling large inputs and outputs. They also aim to make generation less sequential.

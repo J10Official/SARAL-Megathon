@@ -1,0 +1,289 @@
+{
+    "script": [
+        {
+            "scene_name": "Chapter 1: Introduction to Computational Humor",
+            "scene_music": "ChillLofiR.mp3",
+            "interactions": [
+                {
+                    "character_name": "Kurisu",
+                    "dialogue": "Hey! Today, we're diving into something fascinating: Computational Humor! Can computers really *get* jokes?",
+                    "character_expression": "happy",
+                    "image_displayed": "image.png"
+                },
+                {
+                    "character_name": "Kurisu",
+                    "dialogue": "This paper explores how well computers can generate and *explain* humor. It's not as simple as you might think. Humor is abstract, creative, and depends a lot on context.",
+                    "character_expression": "neutral",
+                    "image_displayed": "image.png"
+                },
+                {
+                    "character_name": "Player",
+                    "dialogue": {
+                        "type": "conversational",
+                        "prompt": "Why is understanding humor important for AI?",
+                        "choices": [
+                            {
+                                "text": "It helps them understand human communication better.",
+                                "outcome": "next"
+                            },
+                            {
+                                "text": "It's just a fun challenge for programmers.",
+                                "outcome": "next"
+                            },
+                            {
+                                "text": "Computers understanding jokes? What a world we live in...",
+                                "outcome": "next"
+                            }
+                        ]
+                    },
+                    "character_expression": "neutral",
+                    "image_displayed": "image.png"
+                }
+            ]
+        },
+        {
+            "scene_name": "Chapter 2: The Building Blocks: Theories of Humor",
+            "scene_music": "ChillLofiR.mp3",
+            "interactions": [
+                {
+                    "character_name": "Kurisu",
+                    "dialogue": "Before we get too far, let's look at some theories about what *makes* something funny. There's Relief Theory, Superiority Theory... but the big one for AI is Incongruity Theory.",
+                    "character_expression": "neutral",
+                    "image_displayed": "image.png"
+                },
+                {
+                    "character_name": "Kurisu",
+                    "dialogue": "Incongruity means something is unexpected or out of place. A joke's punchline often creates an incongruity that makes us laugh!",
+                    "character_expression": "happy",
+                    "image_displayed": "image.png"
+                },
+                {
+                    "character_name": "Player",
+                    "dialogue": {
+                        "type": "re-explanation",
+                        "prompt": "So, humor is about things not making sense? Could you give me an example?",
+                        "choices": [
+                            {
+                                "text": "Yes, please give an example",
+                                "outcome": "replay"
+                            },
+                            {
+                                "text": "No, I think I get it.",
+                                "outcome": "next"
+                            }
+                        ]
+                    },
+                    "character_expression": "neutral",
+                    "image_displayed": "image.png"
+                },
+                {
+                    "character_name": "Kurisu",
+                    "dialogue": "Sure! Why don't scientists trust atoms? Because they make up everything! The incongruity is that 'make up' can mean 'invent' or 'compose.'",
+                    "character_expression": "happy",
+                    "image_displayed": "image.png"
+                }
+            ]
+        },
+        {
+            "scene_name": "Chapter 3: Generating Puns: A Playground for AI",
+            "scene_music": "ChillLofiR.mp3",
+            "interactions": [
+                {
+                    "character_name": "Kurisu",
+                    "dialogue": "Alright, let's talk about how computers *make* jokes. A big focus has been on puns, because they're relatively straightforward.",
+                    "character_expression": "neutral",
+                    "image_displayed": "image.png"
+                },
+                {
+                    "character_name": "Kurisu",
+                    "dialogue": "There are two main types: homographic puns, which use words with multiple meanings, and heterographic puns, which rely on similar sounds.",
+                    "character_expression": "neutral",
+                    "image_displayed": "image.png"
+                },
+                {
+                    "character_name": "Player",
+                    "dialogue": {
+                        "type": "question",
+                        "prompt": "What's the difference between homographic and heterographic puns?",
+                        "choices": [
+                            {
+                                "text": "Homographic puns use similar meanings, heterographic use similar sounds.",
+                                "outcome": "wrong"
+                            },
+                            {
+                                "text": "Homographic puns use multiple meanings, heterographic use similar sounds.",
+                                "outcome": "correct"
+                            },
+                            {
+                                "text": "Heterographic puns use multiple meanings, homographic use similar sounds.",
+                                "outcome": "wrong"
+                            }
+                        ]
+                    },
+                    "character_expression": "neutral",
+                    "image_displayed": "image.png"
+                },
+                {
+                    "character_name": "Kurisu",
+                    "dialogue": "Exactly! For example, a homographic pun: 'Time flies like an arrow. Fruit flies like a banana.' 'Flies' has two meanings. A heterographic pun? Less common since it's harder.",
+                    "character_expression": "happy",
+                    "image_displayed": "image.png"
+                }
+            ]
+        },
+        {
+            "scene_name": "Chapter 4: Explaining the Joke: The Real Challenge",
+            "scene_music": "ChillLofiR.mp3",
+            "interactions": [
+                {
+                    "character_name": "Kurisu",
+                    "dialogue": "Generating humor is one thing, but *explaining* why something is funny? That's where things get interesting! One famous quote says that if a computer can explain a joke, it really does understand.",
+                    "character_expression": "neutral",
+                    "image_displayed": "image.png"
+                },
+                {
+                    "character_name": "Kurisu",
+                    "dialogue": "The paper looks at two approaches: classifying the type of humor and providing a natural language explanation.",
+                    "character_expression": "neutral",
+                    "image_displayed": "image.png"
+                },
+                {
+                    "character_name": "Player",
+                    "dialogue": {
+                        "type": "conversational",
+                        "prompt": "Which approach do you think is more valuable?",
+                        "choices": [
+                            {
+                                "text": "Classification",
+                                "outcome": "next"
+                            },
+                            {
+                                "text": "Natural Language Explanation",
+                                "outcome": "next"
+                            },
+                            {
+                                "text": "Both",
+                                "outcome": "next"
+                            }
+                        ]
+                    },
+                    "character_expression": "neutral",
+                    "image_displayed": "image.png"
+                },
+                {
+                    "character_name": "Kurisu",
+                    "dialogue": "The paper says that while classification has its place, natural language explanations provide deeper insights, especially for complex jokes.",
+                    "character_expression": "happy",
+                    "image_displayed": "image.png"
+                }
+            ]
+        },
+        {
+            "scene_name": "Chapter 5: The Future of Computational Humor",
+            "scene_music": "ChillLofiR.mp3",
+            "interactions": [
+                {
+                    "character_name": "Kurisu",
+                    "dialogue": "So, where is this all heading? The paper points to some exciting directions for future research. The first is demographic-aware humor, jokes tailored to specific audiences.",
+                    "character_expression": "neutral",
+                    "image_displayed": "image.png"
+                },
+                {
+                    "character_name": "Kurisu",
+                    "dialogue": "Also, the ability to know someone's intent behind making the joke is important. It can help to avoid the excuse of 'I was just joking' when hate speech has been said.",
+                    "character_expression": "neutral",
+                    "image_displayed": "image.png"
+                },
+                {
+                    "character_name": "Player",
+                    "dialogue": {
+                        "type": "re-explanation",
+                        "prompt": "Intent-aware humor... why is that important?",
+                        "choices": [
+                            {
+                                "text": "Explain it again, please.",
+                                "outcome": "replay"
+                            },
+                            {
+                                "text": "I think I understand.",
+                                "outcome": "next"
+                            }
+                        ]
+                    },
+                    "character_expression": "neutral",
+                    "image_displayed": "image.png"
+                },
+                {
+                    "character_name": "Kurisu",
+                    "dialogue": "Well, intent can help determine if the reference is acceptable, or if it is being used to spread hate. The 'it's just a joke' defense has been a harmful idea, and AI may be able to help see past that.",
+                    "character_expression": "happy",
+                    "image_displayed": "image.png"
+                },
+                {
+                    "character_name": "Player",
+                    "dialogue": {
+                        "type": "question",
+                        "prompt": "What's one ethical consideration of computational humor mentioned in the paper?",
+                        "choices": [
+                            {
+                                "text": "Making jokes that are too intellectual.",
+                                "outcome": "wrong"
+                            },
+                            {
+                                "text": "Unintentionally spreading harmful biases or stereotypes.",
+                                "outcome": "correct"
+                            },
+                            {
+                                "text": "Using too much computing power.",
+                                "outcome": "wrong"
+                            }
+                        ]
+                    },
+                    "character_expression": "neutral",
+                    "image_displayed": "image.png"
+                }
+            ]
+        },
+        {
+            "scene_name": "Chapter 6: Conclusion",
+            "scene_music": "ChillLofiR.mp3",
+            "interactions": [
+                {
+                    "character_name": "Kurisu",
+                    "dialogue": "So, there you have it! Computational humor is an unsolved task with real-world applications. It's not just about making computers funny; it's about understanding language, context, and even ethics.",
+                    "character_expression": "happy",
+                    "image_displayed": "image.png"
+                },
+                {
+                    "character_name": "Kurisu",
+                    "dialogue": "Future work needs to consider a broader range of humor and give explicit attention to the ethics involved. It's a fascinating field with a lot of potential!",
+                    "character_expression": "neutral",
+                    "image_displayed": "image.png"
+                },
+                {
+                    "character_name": "Player",
+                    "dialogue": {
+                        "type": "conversational",
+                        "prompt": "What was your favorite thing you learned?",
+                        "choices": [
+                            {
+                                "text": "That AI may be able to see when jokes are used to spread hate.",
+                                "outcome": "next"
+                            },
+                            {
+                                "text": "The difference between puns!",
+                                "outcome": "next"
+                            },
+                            {
+                                "text": "More about how humor works.",
+                                "outcome": "next"
+                            }
+                        ]
+                    },
+                    "character_expression": "neutral",
+                    "image_displayed": "image.png"
+                }
+            ]
+        }
+    ]
+}

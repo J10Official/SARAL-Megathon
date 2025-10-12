@@ -1,0 +1,301 @@
+{
+  "script": [
+    {
+      "scene_name": "Chapter 1: Introduction to Computational Humour",
+      "scene_music": "ChillLofiR.mp3",
+      "interactions": [
+        {
+          "character_name": "Kurisu",
+          "dialogue": "अरे! आज, हम वास्तव में कुछ मजेदार में गोता लगा रहे हैंः कम्प्यूटेशनल हास्य! यह सब कंप्यूटर को समझने और चुटकुले बनाने के बारे में है।",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "सोचिए कि हास्य कितना जटिल है। यह केवल शब्दों को जानने के बारे में नहीं है, यह संदर्भ, संस्कृति और यहां तक कि अनकहे निहितार्थ को समझने के बारे में है। यही कारण है कि यह ए. आई. के लिए एक ऐसी चुनौती है!",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Player",
+          "dialogue": {
+            "type": "conversational",
+            "prompt": "हमें कंप्यूटर को मज़ेदार बनाने की कोशिश करने से भी क्यों परेशान होना चाहिए?",
+            "choices": [
+              {
+                "text": "क्योंकि यह एक मजेदार चुनौती है!",
+                "outcome": "next"
+              },
+              {
+                "text": "ए. आई. की भाषा की समझ में सुधार करना।",
+                "outcome": "next"
+              },
+              {
+                "text": "क्योंकि चुटकुले सुनाने वाले रोबोट मज़ेदार होते हैं।",
+                "outcome": "next"
+              }
+            ]
+          },
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "बिल्कुल! यह ए. आई. क्या कर सकता है, इसकी सीमाओं को आगे बढ़ाता है। इस लेख में तर्क दिया गया है कि हास्य की समझ एनएलपी का एक महत्वपूर्ण उपक्षेत्र है।",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        }
+      ]
+    },
+    {
+      "scene_name": "Chapter 2: Theories of Humour",
+      "scene_music": "ChillLofiR.mp3",
+      "interactions": [
+        {
+          "character_name": "Kurisu",
+          "dialogue": "तो, क्या चीज़ कुछ मज़ेदार बनाती है? दार्शनिक और वैज्ञानिक सदियों से इस पर विचार कर रहे हैं! कुछ मुख्य सिद्धांत हैं जिन्हें हमें शामिल करना चाहिए।",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "सबसे पहले, 'राहत सिद्धांत' है-यह विचार कि हास्य दबी हुई मनोवैज्ञानिक ऊर्जा को छोड़ता है। फिर, 'श्रेष्ठता सिद्धांत' है, जो बताता है कि हम अपने बारे में बेहतर महसूस करने के लिए दूसरों पर हंसते हैं।",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "लेकिन ए. आई. के लिए दो सबसे अधिक प्रासंगिक हैं 'असंगति सिद्धांत' और 'सौम्य उल्लंघन सिद्धांत'। असंगति का अर्थ है हमारी अपेक्षाओं के साथ कुछ अप्रत्याशित टकराव।",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "सौम्य उल्लंघन सिद्धांत इसे एक कदम आगे ले जाता हैः असंगति को एक मानक को धमकी देने या उल्लंघन करने वाला होना चाहिए, लेकिन यह हानिरहित भी होना चाहिए।",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Player",
+          "dialogue": {
+            "type": "question",
+            "prompt": "कौन सा सिद्धांत कहता है कि हास्य चीजों के अप्रत्याशित होने से आता है?",
+            "choices": [
+              {
+                "text": "असंगतता सिद्धांत",
+                "outcome": "correct"
+              },
+              {
+                "text": "श्रेष्ठता सिद्धांत",
+                "outcome": "wrong"
+              },
+              {
+                "text": "राहत सिद्धांत",
+                "outcome": "wrong"
+              }
+            ]
+          },
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        }
+      ]
+    },
+    {
+      "scene_name": "Chapter 3: Pun Generation - A Starting Point",
+      "scene_music": "ChillLofiR.mp3",
+      "interactions": [
+        {
+          "character_name": "Kurisu",
+          "dialogue": "ठीक है, आइए व्यावहारिक बनें! एक क्षेत्र जहाँ ए. आई. ने कुछ प्रगति की है, वह है श्लेष उत्पन्न करना। वे सरल हैं क्योंकि वे अक्सर शब्द खेल पर और जटिल समझ पर कम भरोसा करते हैं।",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "दो मुख्य प्रकार हैंः होमोग्राफिक श्लेष, जो कई अर्थों वाले शब्दों का उपयोग करते हैं, और हेटेरोग्राफिक श्लेष, जो ऐसे शब्दों का उपयोग करते हैं जो एक जैसे लगते हैं लेकिन अलग-अलग वर्तनी वाले होते हैं।",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Player",
+          "dialogue": {
+            "type": "re-explanation",
+            "prompt": "रुकिए, क्या आप मुझे प्रत्येक का एक उदाहरण दे सकते हैं?",
+            "choices": [
+              {
+                "text": "हां, कृपया!",
+                "outcome": "replay"
+              },
+              {
+                "text": "मुझे लगता है कि मैं समझ गया हूँ, चलो आगे बढ़ते हैं।",
+                "outcome": "next"
+              }
+            ]
+          },
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "ज़रूर! एक होमोग्राफिक श्लेषः 'समय एक तीर की तरह उड़ता है। फल केले की तरह उड़ते हैं। 'मक्खी' के दो अर्थ हैं। एक विषम पद्यः 'मैं चिल्लाता हूँ, तुम चिल्लाते हो, हम सभी आइसक्रीम के लिए चिल्लाते हैं!' वे एक ही, अलग वर्तनी ध्वनि करते हैं।",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "मुद्दा यह है कि बड़ी भाषा के मॉडल महान समरूपी श्लेष बना सकते हैं लेकिन विषमलैंगिक श्लेष के साथ संघर्ष कर सकते हैं। वे 'आलसी श्लेष पीढ़ी' की ओर भी जाते हैं जहां श्लेष संदर्भ में फिट नहीं होता है।",
+          "character_expression": "sad",
+          "image_displayed": "image.png"
+        }
+      ]
+    },
+    {
+      "scene_name": "Chapter 4: Beyond Puns - The Real Challenge",
+      "scene_music": "ChillLofiR.mp3",
+      "interactions": [
+        {
+          "character_name": "Kurisu",
+          "dialogue": "ठीक है, श्लेष एक शुरुआत है, लेकिन सच्चे हास्य में बहुत कुछ शामिल है! सांस्कृतिक ज्ञान, वर्तमान घटनाओं की समझ और जटिल विसंगतियां पैदा करने की क्षमता।",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "व्यंग्य, विडंबना और अवलोकन संबंधी हास्य के बारे में सोचें। इनके लिए मानव व्यवहार और सामाजिक मानदंडों की बारीकियों को समझने के लिए कृत्रिम बुद्धिमत्ता की आवश्यकता होती है। यही वह जगह है जहाँ चीजें मुश्किल हो जाती हैं!",
+          "character_expression": "angry",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Player",
+          "dialogue": {
+            "type": "conversational",
+            "prompt": "तो, हास्य के इन अधिक जटिल रूपों को उत्पन्न करने के लिए कुछ दृष्टिकोण क्या हैं?",
+            "choices": [
+              {
+                "text": "मुझे व्यंग्यात्मक शीर्षक पीढ़ी के बारे में बताएं।",
+                "outcome": "next"
+              },
+              {
+                "text": "समझाएँ कि ए. आई. कैसे अतिशयोक्ति का उपयोग कर सकता है।",
+                "outcome": "next"
+              },
+              {
+                "text": "जीभ में मरोड़ पैदा करने के बारे में क्या?",
+                "outcome": "next"
+              }
+            ]
+          },
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "खैर, कुछ दृष्टिकोण मौजूदा चुटकुलों से टेम्पलेट निकालने और फिर रिक्त स्थान भरने के लिए ए. आई. का उपयोग करने को जोड़ते हैं। अन्य लोग वास्तविक दुनिया के ज्ञान को व्यंग्यात्मक स्रोतों से जोड़ने की कोशिश करते हैं।",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        }
+      ]
+    },
+    {
+      "scene_name": "Chapter 5: Humour Explanation - Cracking the Code",
+      "scene_music": "ChillLofiR.mp3",
+      "interactions": [
+        {
+          "character_name": "Kurisu",
+          "dialogue": "इसे समझाना हास्य उत्पन्न करने से भी अधिक दिलचस्प है! अगर ए. आई. हमें बता सकता है कि कुछ मज़ेदार क्यों है, तो यह बहुत गहरी समझ को प्रदर्शित करता है।",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "एक तरीका वर्गीकरण के माध्यम से हैः भाषाई लक्षणों की पहचान करना जो कुछ मज़ेदार बनाते हैं। लेकिन यह केवल सतह को खरोंच करता है।",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "प्राकृतिक भाषा व्याख्याएँ कहीं अधिक फायदेमंद हैं। कल्पना कीजिए कि एक ए. आई. यह समझाता है कि एक विशेष मजाक सादा अंग्रेजी में मज़ेदार क्यों है! यही लक्ष्य है।",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Player",
+          "dialogue": {
+            "type": "question",
+            "prompt": "प्राकृतिक भाषा व्याख्या का मुख्य लाभ क्या है?",
+            "choices": [
+              {
+                "text": "यह पूर्वनिर्धारित लेबलों पर भरोसा करने के बजाय अनुरूप स्पष्टीकरण प्रदान करता है।",
+                "outcome": "correct"
+              },
+              {
+                "text": "इसे आसानी से स्वचालित किया जा सकता है।",
+                "outcome": "wrong"
+              },
+              {
+                "text": "यह वर्गीकरण से अधिक संक्षिप्त है।",
+                "outcome": "wrong"
+              }
+            ]
+          },
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        }
+      ]
+    },
+    {
+      "scene_name": "Chapter 6: The Ethics and Future of AI Humour",
+      "scene_music": "ChillLofiR.mp3",
+      "interactions": [
+        {
+          "character_name": "Kurisu",
+          "dialogue": "अब गंभीर पक्ष के बारे में बात करते हैं। हास्य व्यक्तिपरक और यहाँ तक कि आक्रामक भी हो सकता है। हमें इस बारे में सावधान रहने की आवश्यकता है कि ए. आई. इसे कैसे उत्पन्न करता है और इसकी व्याख्या कैसे करता है।",
+          "character_expression": "sad",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "भविष्य के शोध को जनसांख्यिकीय-जागरूक हास्य पर ध्यान केंद्रित करना चाहिए, विशिष्ट दर्शकों के लिए चुटकुलों को सिलना चाहिए। और हमें मानव-इन-द-लूप दृष्टिकोण की आवश्यकता है, जहाँ ए. आई. मनुष्यों को उनकी जगह लेने के बजाय हास्य पैदा करने में सहायता करता है।",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "अंततः, कम्प्यूटेशनल हास्य भाषा और बुद्धि को समझने के लिए एक शक्तिशाली उपकरण है। लेकिन किसी भी उपकरण की तरह, इसका जिम्मेदारी से उपयोग करने की आवश्यकता है।",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Player",
+          "dialogue": {
+            "type": "conversational",
+            "prompt": "किस नैतिक चिंता पर सबसे अधिक जोर दिया जा रहा है?",
+            "choices": [
+              {
+                "text": "आक्रामक हास्य की पीढ़ी।",
+                "outcome": "next"
+              },
+              {
+                "text": "मानव हास्य कलाकारों का संभावित विस्थापन।",
+                "outcome": "next"
+              },
+              {
+                "text": "सांस्कृतिक बारीकियों की गलतफहमी।",
+                "outcome": "next"
+              }
+            ]
+          },
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "तीनों ही वैध हैं! लक्ष्य हास्य बनाना है जो दुनिया के बारे में हमारी समझ को जोड़ता है और बढ़ाता है, न कि विभाजित करने या अपमानित करने के लिए।",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        }
+      ]
+    }
+  ],
+  "language": "hi"
+}

@@ -1,0 +1,96 @@
+--- DETAILED ACADEMIC SUMMARY ---
+Title: 2509.21175V1
+Authors: Authors
+Date: 2024
+----------------------------------------
+
+**Who’s Laughing Now? An Overview of Computational Humour Generation and Explanation**
+
+**Abstract**
+
+This paper surveys the field of computational humour, focusing on the generative tasks of creation and explanation. It highlights the challenge of computationally understanding humour, given its abstract, creative, and context-dependent nature, and its role in assessing the reasoning capabilities of Large Language Models (LLMs). The paper notes the relative scarcity of work on generating and explaining humour beyond puns and the limitations of state-of-the-art models in matching human capabilities. It concludes by discussing future research directions, considering the subjective and ethical dimensions of humour.
+
+**1. Introduction**
+
+Humour is a fundamental aspect of human communication, serving to express emotion, build relationships, and provide entertainment. However, its sources vary widely, from simple wordplay to complex topical references that require extensive reasoning. The paper argues that generative computational humour tasks, such as joke creation and explanation, are a valuable domain for analyzing the common-sense reasoning abilities of modern LLMs. It aims to provide an up-to-date account of the field in the age of LLMs, focusing on humour explanation and ethical considerations for future work.
+
+**1.1 Existing Surveys**
+The authors distinguish their work from previous surveys by providing an up-to-date account of the field in the age of LLMs. They place an additional focus on humour explanation and suggestions for future work based on real-world ethical considerations, rather than solely technical innovations.
+
+**1.2 Survey Outline**
+The paper is structured around two primary generative tasks in computational humour: Humour Generation and Humour Explanation. It then provides future directions for research in generative computational humour, taking into account the complex ethics of a potentially offensive language form, and the nature of generating creative text.
+
+**2. The Role of Humour Research in NLP**
+
+The paper argues that computational humour processing is an essential task for addressing the limitations in how models process natural language pragmatics and cultural knowledge. The current focus on mathematical reasoning benchmarks overlooks foundational elements of humour such as phonetic understanding and pragmatic inference. Humour frequently depends on understanding what was *not* said, or inferring the opposite of explicit statements, conflicting with the semantic-similarity-based retrieval systems typically employed. This makes humour understanding a critical subdomain of NLP.
+
+**2.1 Theories of Humour**
+The paper briefly outlines prominent theories of humour, including:
+
+*   *Relief Theory:* Humour results from releasing psychological energy.
+*   *Superiority Theory:* Humour arises from the perception of one's superiority over another.
+*   *Incongruity Theory:* Humour is the perception of something conflicting with expectations.
+*   *Benign Violation Theory:* Humour arises from situations that are simultaneously harmless and incongruous.
+
+It notes that incongruity and norm violation remain essential elements in computationally grounded approaches to humour processing.
+
+**3. Humour Generation**
+
+Generating novel jokes requires an implicit understanding of the cognitive mechanisms underlying humour. The language modelling objective, which aims to maximise the log likelihood of an output sequence, works against the incongruity that humour demands. The following subsections explore historical attempts to address or incorporate this contention for pun generation.
+
+**3.1 Pun Generation**
+
+Pun generation has been a dominant area of research, from early rule-based approaches to contemporary neural methods, due to its computational tractability and theoretical grounding in Incongruity Theory.
+
+**3.1.1 Homographic Pun Generation**
+Homographic puns exploit polysemy (multiple meanings of a word) to create humour. Early approaches leveraged semantic resources like WordNet. More recent methods use neural networks to generate sentences that support multiple word senses simultaneously.
+
+**3.1.2 Heterographic Pun Generation**
+Heterographic puns (words that sound alike but are spelt differently) pose additional challenges, requiring systems to model phonetic similarity while maintaining semantic coherence. Approaches often involve retrieving and editing sentences based on a local-global surprisal principle.
+
+**3.1.3 Combined Pun Generation**
+More recent works propose unified frameworks that address both homographic and heterographic pun generation by incorporating linguistic attributes: ambiguity, distinctiveness, and surprise. Other approaches utilise curriculum learning to align models with the ability to create valid linguistic structures in support of both homographic and homophonic pun creation. Large language models struggle considerably more with the generation of hetero- graphic puns than homographic puns. The phenomenon of "lazy pun generation" presents another major obstacle. Logically, approaches can integrate puns more naturally into real-world conversations by demanding contextual awareness.
+
+**3.2 Non-Pun Humour Generation**
+
+Generating broader forms of humour presents a greater challenge due to associations with cultural knowledge, timeliness, and complex incongruities. Approaches involve combining template extraction and infilling using BERT and LLMs, generating satirical headlines by linking real-world knowledge to satirical sources, and exploring humour through hyperbole using datasets of hyperbolic phrases. Additionally, recent work has grown in the humour-adjacent domain of tongue twister generation.
+
+**4. Humour Explanation**
+
+Humour explanation provides valuable insight into the inner workings of otherwise opaque models. The field of humour explanation remains critically understudied.
+
+**4.1 Explanation through Classification**
+
+Humour detection tasks help models identify the linguistic traits common to humour. Humour detection can therefore be considered a precursor to explanation. The majority of existing works on humour explanation do not focus on providing textual natural language explanations, instead focusing on other indications of a joke’s source, such as word senses or identifying the type of humour being expressed. Explanation through classification faces challenges because assigning the correct label is unlikely to aid human interpretation, and creating robust taxonomies is difficult.
+
+**4.2 Natural Language Explanation**
+
+Natural language explanations are more beneficial for complex humour formats, providing tailored explanations instead of relying on predefined taxonomies. LLMs often struggle with heterographic puns (due to a lack of phonetic knowledge) and longer, context-dependent jokes.
+
+**Multimodal Humour and Meme Explanation**
+
+In multimodal humour, models must understand visual elements to disambiguate puns or establish incongruity. Work on meme explanation involves generating captions that explain the semantics of memes. Intent-aware systems and intent description generation are emerging directions for future study. Datasets for meme understanding and knowledge graphs are being developed. There are also applications focused on detecting cyberbullying in memes.
+
+**5. Discussion & Future Directions**
+
+Generative tasks in computational humour present challenges due to the subjective and potentially offensive nature of humour and the ethics of generating any creative language form.
+
+**5.1 Demographic Aware Humour Generation**
+
+Future research should focus on audience-tailored, demographic-aware, and contextually nuanced humour generation. Techniques like Reinforcement Learning from Human Feedback (RLHF) and perspectivist approaches could be incorporated.
+
+**5.2 Human-in-the-Loop Humour Generation**
+
+To avoid anthropomorphism and the negative impacts of AI on the arts, future work should focus on human-in-the-loop approaches, combining generation and explanation to develop systems for joke workshopping rather than wholesale joke generation.
+
+**5.3 Complex Humour Explanation**
+
+More focus should be given to context-sensitive, esoteric humour such as topical jokes, to aid in the development of advanced information retrieval systems.
+
+**5.4 Intent-Aware Humour Explanation**
+
+Developing intent-aware models that consider the author's characteristics and intent could help avoid legitimizing offensive material and identify instances where offence was likely caused accidentally.
+
+**6. Conclusion**
+
+The paper concludes that computational humour processing remains an unsolved task with real-world applications and is a promising domain for evaluating LLMs' verbal reasoning abilities. Future work should focus on a broader range of humour formats and consider the ethics of computational humour.

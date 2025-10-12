@@ -1,0 +1,24 @@
+PDF to VN Pipeline Report
+========================
+
+Source PDF: /home/jatin/Code/Year3/Megathon/Webrenpyvn/research_paper/2509.21175v1.pdf
+Paper Name: 2509.21175v1
+Generated: 2025-10-12 08:40:13
+
+Generated Files:
+---------------
+
+EN Language:
+  Script: 2509.21175v1_vn_script.json
+  Audio Files: 56 WAV files
+  Audio Size: 106.5 MB
+
+HI Language:
+  Script: 2509.21175v1_vn_script_hi.json
+  Audio Files: 54 WAV files
+  Audio Size: 113.2 MB
+
+TE Language:
+  Script: 2509.21175v1_vn_script_te.json
+  Audio Files: 55 WAV files
+  Audio Size: 138.3 MB

@@ -1,0 +1,279 @@
+{
+  "script": [
+    {
+      "scene_name": "Chapter 1: Introduction to the Transformer",
+      "scene_music": "ChillLofiR.mp3",
+      "interactions": [
+        {
+          "character_name": "Kurisu",
+          "dialogue": "Hey! Ever wondered how machines translate languages or understand text like humans? It's all thanks to models like the Transformer, which we'll be diving into today!",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "This paper, 'Attention Is All You Need,' introduced a revolutionary architecture that ditched old methods like recurrent neural networks (RNNs) in favor of something called 'attention'. It's like giving the model super-focus!",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Player",
+          "dialogue": {
+            "type": "conversational",
+            "prompt": "What's got you so excited about 'attention'?",
+            "choices": [
+              {
+                "text": "Tell me why attention is so important!",
+                "outcome": "next"
+              },
+              {
+                "text": "What were the problems with older methods?",
+                "outcome": "next"
+              },
+              {
+                "text": "Let's just dive into the details!",
+                "outcome": "next"
+              }
+            ]
+          },
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        }
+      ]
+    },
+    {
+      "scene_name": "Chapter 2: The Problem with Recurrence",
+      "scene_music": "ChillLofiR.mp3",
+      "interactions": [
+        {
+          "character_name": "Kurisu",
+          "dialogue": "Okay, so before Transformer, RNNs were the big deal for processing sequences. But they had a bottleneck: they're inherently sequential. Think of it like a relay race – each step has to wait for the previous one to finish!",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "This sequential nature made it difficult to parallelize training, especially with long sentences or documents. The Transformer solves this by looking at everything at once!",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Player",
+          "dialogue": {
+            "type": "re-explanation",
+            "prompt": "Can you use a different example to show the disadvantage?",
+            "choices": [
+              {
+                "text": "Yes, please use another analogy",
+                "outcome": "replay"
+              },
+              {
+                "text": "No, I understand the basics",
+                "outcome": "next"
+              }
+            ]
+          },
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "Alright, imagine you're summarizing a long novel. With RNNs, you'd have to read the book word-by-word, in order. Transformers, on the other hand, can skim through the entire book at once to identify the main themes!",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Player",
+          "dialogue": {
+            "type": "question",
+            "prompt": "What's the biggest limitation of Recurrent Neural Networks (RNNs)?",
+            "choices": [
+              {
+                "text": "Difficulty in parallelizing training",
+                "outcome": "correct"
+              },
+              {
+                "text": "Inability to process sequences",
+                "outcome": "wrong"
+              },
+              {
+                "text": "High memory usage",
+                "outcome": "wrong"
+              }
+            ]
+          },
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        }
+      ]
+    },
+    {
+      "scene_name": "Chapter 3: Attention Mechanism Explained",
+      "scene_music": "ChillLofiR.mp3",
+      "interactions": [
+        {
+          "character_name": "Kurisu",
+          "dialogue": "So, how does this 'attention' thing work? At its core, attention allows the model to focus on different parts of the input when processing it. It's like highlighting the most important words in a sentence!",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "The attention function takes a query (Q), keys (K), and values (V) as input. It calculates a weight for each value based on its similarity to the query, then sums the values weighted by these scores.",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Player",
+          "dialogue": {
+            "type": "re-explanation",
+            "prompt": "That still sounds confusing to me.",
+            "choices": [
+              {
+                "text": "Yes, I want to understand with an easier explanation",
+                "outcome": "replay"
+              },
+              {
+                "text": "No, I got it. Let's move on!",
+                "outcome": "next"
+              }
+            ]
+          },
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "Alright, imagine you're searching for a specific item in a cluttered room. Your 'query' is what you're looking for (e.g., 'red book'). The 'keys' are labels on each object in the room, and the 'values' are the objects themselves. Attention helps you quickly identify the objects that match your query, effectively highlighting the 'red book'!",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "In mathematical terms, Attention(Q, K, V) = softmax(QKT/√dk)V . The softmax part turns the dot products into probabilities, and the scaling factor (√dk) prevents the dot products from getting too large.",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        }
+      ]
+    },
+    {
+      "scene_name": "Chapter 4: Multi-Head Attention",
+      "scene_music": "ChillLofiR.mp3",
+      "interactions": [
+        {
+          "character_name": "Kurisu",
+          "dialogue": "The Transformer takes attention a step further with 'Multi-Head Attention'. Instead of just one attention function, it uses multiple parallel attention functions, each focusing on different aspects of the input.",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "It's like having multiple experts looking at the same problem from different angles. Each 'head' learns different relationships between words, and then the results are combined.",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Player",
+          "dialogue": {
+            "type": "question",
+            "prompt": "Why is Multi-Head Attention better than single-head attention?",
+            "choices": [
+              {
+                "text": "It allows the model to capture different relationships between words.",
+                "outcome": "correct"
+              },
+              {
+                "text": "It reduces computational complexity.",
+                "outcome": "wrong"
+              },
+              {
+                "text": "It simplifies the attention mechanism.",
+                "outcome": "wrong"
+              }
+            ]
+          },
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        }
+      ]
+    },
+    {
+      "scene_name": "Chapter 5: Putting It All Together - Encoder & Decoder",
+      "scene_music": "ChillLofiR.mp3",
+      "interactions": [
+        {
+          "character_name": "Kurisu",
+          "dialogue": "The Transformer architecture uses an encoder-decoder structure, just like many sequence-to-sequence models. The encoder processes the input, and the decoder generates the output.",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "Both the encoder and decoder are made up of N=6 identical layers. Each encoder layer contains multi-head self-attention and a feed-forward network. The decoder has those plus another attention layer to focus on the encoder's output.",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "Importantly, the decoder uses a 'masked' self-attention to prevent looking ahead, ensuring it only uses previously generated tokens to predict the next one. This is crucial for autoregressive generation.",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Player",
+          "dialogue": {
+            "type": "conversational",
+            "prompt": "What aspects of the encoding/decoding process do you want to review?",
+            "choices": [
+              {
+                "text": "Let's focus on the masking mechanism in the decoder.",
+                "outcome": "next"
+              },
+              {
+                "text": "Explain the role of the feed-forward network more simply.",
+                "outcome": "next"
+              },
+              {
+                "text": "Let's move on to how they dealt with the position problem",
+                "outcome": "next"
+              }
+            ]
+          },
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        }
+      ]
+    },
+    {
+      "scene_name": "Chapter 6: Positional Encoding and Conclusion",
+      "scene_music": "ChillLofiR.mp3",
+      "interactions": [
+        {
+          "character_name": "Kurisu",
+          "dialogue": "Since the Transformer doesn't use recurrence, it needs a way to know the position of words in the sequence. That's where 'positional encoding' comes in!",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "The paper uses sine and cosine functions of different frequencies to create these encodings, which are then added to the word embeddings. This gives the model information about the order of words.",
+          "character_expression": "neutral",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "So there you have it! The Transformer, a revolutionary architecture that relies entirely on attention mechanisms. It achieves state-of-the-art results in translation and opens up new possibilities for sequence modeling!",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        },
+        {
+          "character_name": "Kurisu",
+          "dialogue": "The impact is HUGE! Everything from large language models to image generation AI is built on these principles. It really *is* all you need!",
+          "character_expression": "happy",
+          "image_displayed": "image.png"
+        }
+      ]
+    }
+  ],
+  "language": "en"
+}
