@@ -1,42 +1,49 @@
-# Setup
+# Research Paper to Visual Novel — SARAL Megathon
 
-- Make sure you are in the topmost directory webrenpy.py
+A Megathon project that converts research papers into playable visual-novel experiences, with generated dialogue, translated content, and audio. The repository includes a React player, a Python asset-generation pipeline, and sample outputs.
 
-- run npm install (make sure you have node package manager)
+## Start with the included visual novel
 
-- run pip install -r requirements.txt
+From the repository root:
 
+```bash
+cd Webrenpyvn
+npm install
+npm start
+```
 
-# Usage
+Open the development-server URL, normally `http://localhost:3000`. The included content and [public/game.conf](Webrenpyvn/public/game.conf) select the paper and language for playback. New paper conversion is a separate workflow and can require external services.
 
-## Frontend
+## Repository guide
 
-- The Visual novel script and its translation version assests (audio files, etc.) are already generated for your convenience.
+| Path | Purpose |
+|---|---|
+| [Webrenpyvn/](Webrenpyvn/) | React player, configuration, and included content |
+| [Webrenpyvn/LongReadme.md](Webrenpyvn/LongReadme.md) | Detailed setup, configuration, controls, and troubleshooting |
+| [Webrenpyvn/Assest_generation_pipeline/](Webrenpyvn/Assest_generation_pipeline/) | PDF-to-visual-novel scripts; directory spelling is preserved |
+| [Webrenpyvn/requirements.txt](Webrenpyvn/requirements.txt) | Python dependencies |
+| [Webrenpyvn/outputs/](Webrenpyvn/outputs/) | Generated paper content |
+| [Webrenpyvn/public/](Webrenpyvn/public/) | Assets served by the player |
 
-- Just run npm start and you can play a basic version of the research paper
+### Generate content for another paper
 
-- you can change your language in /Webrenpyvn/public/game.conf from the default language
+Install Python dependencies from `Webrenpyvn`:
 
-## Backend
+```bash
+python -m pip install -r requirements.txt
+cd Assest_generation_pipeline
+```
 
-- Use the provided bash script after giving it execute permissions
-- ./run_pipeline.sh 1706.03762v5
+Follow the pipeline's [README](Webrenpyvn/Assest_generation_pipeline/README.md) and the [full workflow](Webrenpyvn/LongReadme.md) for input placement, required service configuration, conversion, and copying generated content to the player. Language and content configuration live at the existing paths documented there.
 
-- Or alternatively run 
-    python3 pdf_to_vn_pipeline.py 1706.03762v5.pdf
-- Running backend could take some time 
+## Project lineage and status
 
+This is the canonical implemented Megathon project. [Final-mega-submit](https://github.com/J10Official/Final-mega-submit) and [Megathon](https://github.com/J10Official/Megathon) are historical submission/placeholder repositories.
 
+The related [SARAL fork](https://github.com/J10Official/SARAL) originates from [DemocratiseResearch/SARAL](https://github.com/DemocratiseResearch/SARAL), which converts papers into educational videos. This repository's visual-novel implementation is a distinct project direction. Preserve upstream attribution and the included [MIT license](LICENSE).
 
-# If in doubt there are detailed instructions in LongReadme.md
+Generated media and historical artifacts remain in their existing locations so player and pipeline paths continue to resolve.
 
+## AI assistance disclosure
 
-# AI USAGE (Co-pilot sesstion not sharabel)
-https://chatgpt.com/share/68eb45e3-1adc-800b-9c70-37224cecbf32
-https://chatgpt.com/share/68eb4620-6070-800b-ad73-084668fbf021
-https://chatgpt.com/share/68eb4662-4844-800b-a6f8-5c6512db7e8e
-https://chatgpt.com/share/68eb4516-5c7c-8002-9e66-8009b1dfbde7
-https://chatgpt.com/share/68eb454b-60f0-8002-a3b2-f2f3cc475004
-https://chatgpt.com/share/68eb458b-f69c-8003-8c5a-1ba22f427cb0
-https://chat.deepseek.com/share/824i89j9trhgbejsfe
-
+AI assistance was used during development. Assistance-session links are omitted from this public overview.
