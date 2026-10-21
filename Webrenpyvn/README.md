@@ -1,31 +1,27 @@
-# Setup
+# WebRenPy Visual Novel Player
 
-- Make sure you are in the topmost directory webrenpy.py
+See the [repository overview](../README.md) for the project, lineage, and submission status. This directory contains the React player and the existing paper-generation workflow.
 
-- run npm install (make sure you have node package manager)
+## Play the included content
 
-- run pip install -r requirements.txt
+Run from this directory (`Webrenpyvn`):
 
+```bash
+npm install
+npm start
+```
 
-# Usage
+The development server normally opens at `http://localhost:3000`. The included scripts and translated assets are selected through [public/game.conf](public/game.conf). Preserve the configured content paths when switching papers or languages.
 
-## Frontend
+## Generate new content
 
-- The Visual novel script and its translation version assests (audio files, etc.) are already generated for your convenience.
+Install Python dependencies from this directory:
 
-- Just run npm start and you can play a basic version of the research paper
+```bash
+python -m pip install -r requirements.txt
+cd Assest_generation_pipeline
+```
 
-- you can change your language in /Webrenpyvn/public/game.conf from the default language
+Follow the [pipeline README](Assest_generation_pipeline/README.md) for conversion and service configuration. The directory spelling is intentional here because it matches the checked-in path.
 
-## Backend
-
-- Use the provided bash script after giving it execute permissions
-- ./run_pipeline.sh 1706.03762v5
-
-- Or alternatively run 
-    python3 pdf_to_vn_pipeline.py 1706.03762v5.pdf
-- Running backend could take some time 
-
-
-
-# If in doubt there are detailed instructions in LongReadme.md
+For language selection, generated-content placement, controls, and troubleshooting, use [LongReadme.md](LongReadme.md).
